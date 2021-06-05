@@ -1,0 +1,109 @@
+//navbar
+
+//navbar mobile
+@media (min-width: 667px) {
+.navigation {
+    position: relative;
+    }
+.navigation__logo {
+    position: absolute;
+    font-family: $oldstandard;
+    font-weight: $bold;
+    color: $white;
+    background-color: $smoky-black;
+    font-size: $x-large;
+    height: 2.5rem;
+    width: 4rem;
+    text-align: center;
+    padding-top: 1.2rem;
+}
+
+.collapsible {
+        text-align: right;
+        label {
+        display: block;
+        padding-top: .6em;
+        padding-bottom: .25em;
+        padding-right: 1.5em;
+        font-size: 1.8rem;
+        }
+        }
+#menu {
+    display: none;
+}
+
+input:checked ~ .navigation__container {
+    max-height: 100%;
+    }
+
+.navigation__container {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navigation__item {
+    a {
+    display: block;
+    text-align: right;
+    padding: .5em;
+    padding-right: 2rem;
+    font-family: $raleway;
+    font-size: 1.2rem;
+    font-weight: $bold;
+    color: $smoky-black;
+    text-decoration: none;
+    &:hover {
+    color: $quick-silver;
+    }
+   }
+  }
+}
+
+// Escritorio
+
+@media (min-width: 992px) {
+    .collapsible {
+        label {
+        display: none;
+        }
+    }
+
+    .navigation__container {
+        max-height: 100%;
+        padding: .5em 3em .5em 0;
+        overflow: visible;
+        }
+
+    .navigation__list {
+        display: flex;
+        justify-content: flex-end;
+        margin: inherit;
+        padding: inherit;
+        list-style-type:none;
+        
+        }
+
+    .navigation__item {
+        a {
+        padding: .7em 1em;
+        font-size: 1rem;
+        font-weight: $bold;
+        font-family: $raleway;
+        color: $smoky-black;
+        }
+}    
+.navigation__logo {
+    position: absolute;
+    font-family: $oldstandard;
+    font-weight: $bold;
+    color: $white;
+    background-color: $smoky-black;
+    font-size: $x-large;
+    height: 2.7rem;
+    width: 4rem;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+}
+

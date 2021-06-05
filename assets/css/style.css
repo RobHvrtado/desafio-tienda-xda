@@ -1,0 +1,237 @@
+body {
+  background-color: #fff;
+}
+
+/*  -- Reset  --*/
+body *, html * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 667px) {
+  .navigation {
+    position: relative;
+  }
+
+  .navigation__logo {
+    position: absolute;
+    font-family: "old standard tt", serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0C0910;
+    font-size: 20px;
+    height: 2.5rem;
+    width: 4rem;
+    text-align: center;
+    padding-top: 1.2rem;
+  }
+
+  .collapsible {
+    text-align: right;
+  }
+  .collapsible label {
+    display: block;
+    padding-top: 0.6em;
+    padding-bottom: 0.25em;
+    padding-right: 1.5em;
+    font-size: 1.8rem;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  input:checked ~ .navigation__container {
+    max-height: 100%;
+  }
+
+  .navigation__container {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .navigation__item a {
+    display: block;
+    text-align: right;
+    padding: 0.5em;
+    padding-right: 2rem;
+    font-family: "raleway", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0C0910;
+    text-decoration: none;
+  }
+  .navigation__item a:hover {
+    color: #A6A5A8;
+  }
+}
+@media (min-width: 992px) {
+  .collapsible label {
+    display: none;
+  }
+
+  .navigation__container {
+    max-height: 100%;
+    padding: 0.5em 3em 0.5em 0;
+    overflow: visible;
+  }
+
+  .navigation__list {
+    display: flex;
+    justify-content: flex-end;
+    margin: inherit;
+    padding: inherit;
+    list-style-type: none;
+  }
+
+  .navigation__item a {
+    padding: 0.7em 1em;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "raleway", sans-serif;
+    color: #0C0910;
+  }
+
+  .navigation__logo {
+    position: absolute;
+    font-family: "old standard tt", serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0C0910;
+    font-size: 20px;
+    height: 2.7rem;
+    width: 4rem;
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+}
+.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template: 58px 50% 60% 35%/100%;
+  grid-template-areas: "header" "hero" "main" "form";
+}
+
+@media (min-width: 992px) {
+  .container {
+    grid-template: 58px 80% 20%/50% 50%;
+    grid-template-areas: "header header" "main hero" "form hero";
+  }
+}
+.header {
+  grid-area: header;
+  background: #fff;
+}
+
+.hero {
+  grid-area: hero;
+  background-image: url("../../assets/img/imagen1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.main {
+  grid-area: main;
+  background: #fff;
+}
+
+.form {
+  grid-area: form;
+  background: #0C0910;
+}
+
+@media (min-width: 667px) {
+  .form__title {
+    color: #fff;
+    font-family: "old standard tt", serif;
+    font-size: 30px;
+    padding: 0.5rem 0.7rem;
+  }
+  .form__text {
+    color: #fff;
+    font-family: "old standard tt", serif;
+    font-size: 16px;
+    padding: 0.5rem 0.8rem;
+  }
+  .form__input {
+    margin: 0.5rem 0.8rem;
+    padding-right: 4rem;
+  }
+  .form__submit {
+    writing-mode: vertical-rl;
+    background-color: #fff;
+    text-align: center;
+    width: 2.7rem;
+    height: 10rem;
+    bottom: 2px;
+    left: 646px;
+    position: relative;
+  }
+}
+@media (min-width: 667px) {
+  .main .main__title {
+    font-family: "old standard tt", serif;
+    color: #0C0910;
+    font-size: 30px;
+    padding: 1rem;
+  }
+  .main .main__text {
+    font-family: "raleway", sans-serif;
+    font-size: 16px;
+    color: #A6A5A8;
+    padding: 1rem;
+  }
+  .main .main__button {
+    margin: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .main .main__title {
+    font-family: "old standard tt", serif;
+    color: #0C0910;
+    font-size: 50px;
+    padding: 3rem 6rem;
+  }
+  .main .main__text {
+    font-family: "raleway", sans-serif;
+    font-size: 20px;
+    color: #A6A5A8;
+    padding: 5rem 6rem;
+  }
+  .main .main__button {
+    margin: 2rem 6rem;
+  }
+}
+.primary-btn {
+  color: #0C0910;
+  background-color: #fff;
+  border-radius: 0%;
+  border-color: #0C0910;
+  font-family: "raleway", sans-serif;
+  font-weight: 700;
+  border-style: solid;
+  border-width: 1px;
+  padding: 7px 10px;
+}
+.primary-btn:hover {
+  border-color: #D1D1D1;
+  background-color: #fff;
+  color: #0C0910;
+}
+.primary-btn:focus {
+  background-color: #fff;
+  border-color: #D1D1D1;
+  color: #D1D1D1;
+  box-shadow: none;
+}
+
+/*# sourceMappingURL=style.css.map */

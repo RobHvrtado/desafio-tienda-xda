@@ -1,0 +1,47 @@
+@media (min-width:667px) {
+ .main {
+
+    .main__title {
+        font-family: $oldstandard;
+        color: $smoky-black;
+        font-size: $xx-large;
+        padding: 1rem;
+    }
+    
+    .main__text {
+        font-family: $raleway;
+        font-size: $medium;
+        color: $quick-silver;
+        padding: 1rem;
+    }
+    
+    .main__button {
+        margin: 1rem;
+    }
+    
+    }
+}
+
+@media (min-width: 992px) {
+    .main {
+
+        .main__title {
+            font-family: $oldstandard;
+            color: $smoky-black;
+            font-size: $xxx-large;
+            padding: 3rem 6rem;
+        }
+        
+        .main__text {
+            font-family: $raleway;
+            font-size: $x-large;
+            color: $quick-silver;
+            padding: 5rem 6rem;
+        }
+        
+        .main__button {
+            margin: 2rem 6rem;
+        }
+        
+        }
+}

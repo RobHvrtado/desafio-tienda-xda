@@ -1,0 +1,33 @@
+@media (min-width:667px){
+.form {
+   
+    &__title {
+        color: $white;
+        font-family: $oldstandard;
+        font-size: $xx-large;
+        padding: .5rem .7rem;
+    }
+    &__text {
+        color: $white;
+        font-family: $oldstandard;
+        font-size: $medium;
+        padding: .5rem .8rem;
+    }
+    &__input {
+        margin: .5rem .8rem;
+        padding-right: 4rem;
+    }
+    &__submit {
+        writing-mode: vertical-rl;
+        background-color: $white;
+        text-align: center;
+        width: 2.7rem;
+        height: 10rem;
+       
+        bottom: 2px;
+        left:646px;
+        position: relative;
+        
+    }
+}
+}
